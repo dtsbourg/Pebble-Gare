@@ -1,0 +1,20 @@
+{
+  "uuid": "d21d9265-4727-40b5-8809-5cf9dd1b5f6f",
+  "shortName": "TL live",
+  "longName": "TL live",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "location": 0,
+    "time": 1,
+    "direction": 2,
+    "timet": 3
+  },
+  "resources": {
+    "media": []
+  }
+}

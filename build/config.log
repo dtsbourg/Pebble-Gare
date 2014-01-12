@@ -1,0 +1,18 @@
+# project  configured on Mon Jan  6 11:55:10 2014 by
+# waf 1.7.11 (abi 98, python 20705f0 on darwin)
+# using /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/waf configure build
+#
+----------------------------------------
+Setting top to
+/Users/Dylan/pebble-dev/tl_live
+----------------------------------------
+Setting out to
+/Users/Dylan/pebble-dev/tl_live/build
+----------------------------------------
+Checking for program gcc,cc
+arm-none-eabi-gcc
+find program=['gcc', 'cc'] paths='' var='CC' -> 'arm-none-eabi-gcc'
+----------------------------------------
+Checking for program ar
+arm-none-eabi-ar
+find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
