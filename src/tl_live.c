@@ -16,7 +16,7 @@ enum TLKey {
   TL_LOCATION_KEY = 0x0,         // TUPLE_CSTRING
   TL_TIME_KEY = 0x1,             // TUPLE_CSTRING
   TL_DIRECTION_KEY = 0x2,        // TUPLE_CSTRING
-  TL_TIMET_KEY  = 0x3,      // TUPLE_CSTRING
+  TL_TIMET_KEY  = 0x3,          // TUPLE_CSTRING
 };
 
 
