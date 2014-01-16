@@ -13,12 +13,20 @@ static AppSync sync;
 static uint8_t sync_buffer[128];
 
 enum TLKey {
-  TL_LOCATION_KEY = 0x0,         // TUPLE_CSTRING
-  TL_TIME_KEY = 0x1,             // TUPLE_CSTRING
-  TL_DIRECTION_KEY = 0x2,        // TUPLE_CSTRING
-  TL_TIMET_KEY  = 0x3,          // TUPLE_CSTRING
+  TL_LOCATION_KEY  = 0x0, // TUPLE_CSTRING
+  TL_TIME_KEY      = 0x1, // TUPLE_CSTRING
+  TL_DIRECTION_KEY = 0x2, // TUPLE_CSTRING
+  TL_TIMET_KEY     = 0x3, // TUPLE_CSTRING
+  TL_ERROR_KEY     = -1   // TUPLE_CSTRING
 };
 
+
+static const uint32_t TLLiveMessageKey  = 0x01;
+
+typedef uint8_t TLLiveMessage;
+
+static const TLLiveMessage Refresh          = 0x01;
+static const TLLiveMessage ReverseDirection = 0x02;
 
 
 static void sync_error_callback(DictionaryResult dict_error, AppMessageResult app_message_error, void *context) {
@@ -43,11 +51,15 @@ static void sync_tuple_changed_callback(const uint32_t key, const Tuple* new_tup
       text_layer_set_text(direction_layer, new_tuple->value->cstring);
       text_layer_set_text(directiond_layer, new_tuple->value->cstring);
       break;
+
+    case TL_ERROR_KEY:
+      // TODO: text_layer_set_text(error_layer, new_tuple->value->cstring);
+      break;
   }
 }
 
-static void send_cmd(void) {
-  Tuplet value = TupletInteger(1, 1);
+static void send_cmd(TLLiveMessage msg) {
+  Tuplet value = TupletInteger(TLLiveMessageKey, msg);
 
   DictionaryIterator *iter;
   app_message_outbox_begin(&iter);
@@ -124,6 +136,29 @@ static void window_unload(Window *window) {
   text_layer_destroy(location_layer);
 }
 
+void down_single_click_handler(ClickRecognizerRef recognizer, void *context) {
+  // called on single click ...
+  Window *window = (Window *)context;
+
+  ButtonId buttonId = click_recognizer_get_button_id(recognizer);
+
+  TLLiveMessage msg = 0;
+
+  switch(buttonId) {
+    case BUTTON_ID_UP     : msg = ReverseDirection;
+    case BUTTON_ID_SELECT : msg = Refresh;
+  }
+
+  if(msg) {
+    send_cmd(msg);
+  }
+}
+
+static void config_provider(Window *window) {
+  // single click / repeat-on-hold config:
+  window_single_click_subscribe(BUTTON_ID_DOWN, down_single_click_handler);
+}
+
 static void init(void) {
   window = window_create();
   window_set_background_color(window, GColorBlack);
@@ -132,6 +167,8 @@ static void init(void) {
     .load = window_load,
     .unload = window_unload
   });
+  
+  window_set_click_config_provider(&window, (ClickConfigProvider)config_provider);
   
   const uint32_t max_inbox_size = app_message_inbox_size_maximum();
 
