@@ -132,10 +132,10 @@ static void init(void) {
     .load = window_load,
     .unload = window_unload
   });
+  
+  const uint32_t max_inbox_size = app_message_inbox_size_maximum();
 
-  const int inbound_size = 64;
-  const int outbound_size = 64;
-  app_message_open(inbound_size, outbound_size);
+  app_message_open(max_inbox_size, max_inbox_size);
 
   const bool animated = true;
   window_stack_push(window, animated);
