@@ -123,7 +123,7 @@ static void window_load(Window *window) {
   app_sync_init(&sync, sync_buffer, sizeof(sync_buffer), initial_values, ARRAY_LENGTH(initial_values),
       sync_tuple_changed_callback, sync_error_callback, NULL);
 
-  send_cmd();
+  send_cmd(Refresh);
 }
 
 static void window_unload(Window *window) {
@@ -136,9 +136,9 @@ static void window_unload(Window *window) {
   text_layer_destroy(location_layer);
 }
 
-void down_single_click_handler(ClickRecognizerRef recognizer, void *context) {
+void single_click_handler(ClickRecognizerRef recognizer, void *context) {
   // called on single click ...
-  Window *window = (Window *)context;
+  //Window *window = (Window *)context;
 
   ButtonId buttonId = click_recognizer_get_button_id(recognizer);
 
@@ -146,7 +146,12 @@ void down_single_click_handler(ClickRecognizerRef recognizer, void *context) {
 
   switch(buttonId) {
     case BUTTON_ID_UP     : msg = ReverseDirection;
+                            break;
     case BUTTON_ID_SELECT : msg = Refresh;
+                            break;
+    case BUTTON_ID_DOWN   : break;
+    case NUM_BUTTONS      : break;
+    case BUTTON_ID_BACK   : break;
   }
 
   if(msg) {
@@ -156,7 +161,8 @@ void down_single_click_handler(ClickRecognizerRef recognizer, void *context) {
 
 static void config_provider(Window *window) {
   // single click / repeat-on-hold config:
-  window_single_click_subscribe(BUTTON_ID_DOWN, down_single_click_handler);
+  window_single_click_subscribe(BUTTON_ID_UP, single_click_handler);
+  window_single_click_subscribe(BUTTON_ID_SELECT, single_click_handler);
 }
 
 static void init(void) {
@@ -168,7 +174,7 @@ static void init(void) {
     .unload = window_unload
   });
   
-  window_set_click_config_provider(&window, (ClickConfigProvider)config_provider);
+  window_set_click_config_provider(window, (ClickConfigProvider)config_provider);
   
   const uint32_t max_inbox_size = app_message_inbox_size_maximum();
 

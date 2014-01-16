@@ -38,9 +38,9 @@ Pebble.addEventListener("ready",
 
 Pebble.addEventListener("appmessage",
                         function(e) {
-                          console.log(e.type);
-                          fetchMetro();
-                          console.log("message!");
+                          //console.log(e.type);
+                          //fetchMetro();
+                          console.log("message : " + e.payload);
                         });
 
 Pebble.addEventListener("webviewclosed",
