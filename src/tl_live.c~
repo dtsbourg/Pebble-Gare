@@ -29,7 +29,6 @@ static void sync_tuple_changed_callback(const uint32_t key, const Tuple* new_tup
   switch (key) {
     case TL_LOCATION_KEY:
       text_layer_set_text(location_layer, new_tuple->value->cstring);
-      break;
 
     case TL_TIME_KEY:
       text_layer_set_text(time_layer, new_tuple->value->cstring);
