@@ -521,8 +521,6 @@ Discarded input sections
                 0x0000000000000000        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
  .text.app_message_get_context
                 0x0000000000000000        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
- .text.app_message_inbox_size_maximum
-                0x0000000000000000        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
  .text.app_message_outbox_size_maximum
                 0x0000000000000000        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
  .text.app_message_register_inbox_dropped
@@ -602,163 +600,166 @@ LOAD /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm
  .pbl_header    0x0000000000000000       0x82 appinfo.auto.c.7.o
                 0x0000000000000000                __pbl_app_info
 
-.text           0x0000000000000084      0x582
+.text           0x0000000000000084      0x592
  *(.text)
  .text          0x0000000000000084       0x14 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
  *(.text.*)
  .text.window_unload
-                0x0000000000000098       0x4c src/tl_live.c.7.o
+                0x0000000000000098       0x58 src/tl_live.c.7.o
  .text.window_load
-                0x00000000000000e4      0x268 src/tl_live.c.7.o
+                0x00000000000000f0      0x268 src/tl_live.c.7.o
  .text.sync_error_callback
-                0x000000000000034c       0x20 src/tl_live.c.7.o
+                0x0000000000000358       0x20 src/tl_live.c.7.o
  .text.sync_tuple_changed_callback
-                0x000000000000036c       0x60 src/tl_live.c.7.o
+                0x0000000000000378       0x58 src/tl_live.c.7.o
  .text.startup.main
-                0x00000000000003cc       0x70 src/tl_live.c.7.o
-                0x00000000000003cc                main
+                0x00000000000003d0       0x70 src/tl_live.c.7.o
+                0x00000000000003d0                main
  .text.app_event_loop
-                0x000000000000043c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x000000000000043c                app_event_loop
- .text.app_log  0x0000000000000448        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000448                app_log
+                0x0000000000000440        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000440                app_event_loop
+ .text.app_log  0x000000000000044c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x000000000000044c                app_log
  .text.app_message_open
-                0x0000000000000454        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000454                app_message_open
+                0x0000000000000458        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000458                app_message_open
  .text.app_sync_deinit
-                0x0000000000000460        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000460                app_sync_deinit
+                0x0000000000000464        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000464                app_sync_deinit
  .text.app_sync_init
-                0x000000000000046c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x000000000000046c                app_sync_init
+                0x0000000000000470        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000470                app_sync_init
  .text.dict_write_end
-                0x0000000000000478        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000478                dict_write_end
+                0x000000000000047c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x000000000000047c                dict_write_end
  .text.dict_write_tuplet
-                0x0000000000000484        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000484                dict_write_tuplet
+                0x0000000000000488        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000488                dict_write_tuplet
  .text.fonts_get_system_font
-                0x0000000000000490        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000490                fonts_get_system_font
+                0x0000000000000494        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000494                fonts_get_system_font
  .text.layer_add_child
-                0x000000000000049c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x000000000000049c                layer_add_child
- .text.memset   0x00000000000004a8        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004a8                memset
+                0x00000000000004a0        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004a0                layer_add_child
+ .text.memset   0x00000000000004ac        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004ac                memset
  .text.text_layer_create
-                0x00000000000004b4        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004b4                text_layer_create
+                0x00000000000004b8        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004b8                text_layer_create
  .text.text_layer_destroy
-                0x00000000000004c0        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004c0                text_layer_destroy
+                0x00000000000004c4        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004c4                text_layer_destroy
  .text.text_layer_get_layer
-                0x00000000000004cc        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004cc                text_layer_get_layer
+                0x00000000000004d0        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004d0                text_layer_get_layer
  .text.text_layer_set_background_color
-                0x00000000000004d8        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004d8                text_layer_set_background_color
+                0x00000000000004dc        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004dc                text_layer_set_background_color
  .text.text_layer_set_font
-                0x00000000000004e4        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004e4                text_layer_set_font
+                0x00000000000004e8        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004e8                text_layer_set_font
  .text.text_layer_set_text
-                0x00000000000004f0        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004f0                text_layer_set_text
+                0x00000000000004f4        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x00000000000004f4                text_layer_set_text
  .text.text_layer_set_text_alignment
-                0x00000000000004fc        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x00000000000004fc                text_layer_set_text_alignment
+                0x0000000000000500        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000500                text_layer_set_text_alignment
  .text.text_layer_set_text_color
-                0x0000000000000508        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000508                text_layer_set_text_color
+                0x000000000000050c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x000000000000050c                text_layer_set_text_color
  .text.window_create
-                0x0000000000000514        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000514                window_create
+                0x0000000000000518        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000518                window_create
  .text.window_destroy
-                0x0000000000000520        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000520                window_destroy
+                0x0000000000000524        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000524                window_destroy
  .text.window_get_root_layer
-                0x000000000000052c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x000000000000052c                window_get_root_layer
+                0x0000000000000530        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000530                window_get_root_layer
  .text.window_set_background_color
-                0x0000000000000538        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000538                window_set_background_color
+                0x000000000000053c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x000000000000053c                window_set_background_color
  .text.window_set_fullscreen
-                0x0000000000000544        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000544                window_set_fullscreen
+                0x0000000000000548        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000548                window_set_fullscreen
  .text.window_set_window_handlers
-                0x0000000000000550        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000550                window_set_window_handlers
+                0x0000000000000554        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000554                window_set_window_handlers
  .text.window_stack_push
-                0x000000000000055c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x000000000000055c                window_stack_push
+                0x0000000000000560        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000560                window_stack_push
+ .text.app_message_inbox_size_maximum
+                0x000000000000056c        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x000000000000056c                app_message_inbox_size_maximum
  .text.app_message_outbox_begin
-                0x0000000000000568        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000568                app_message_outbox_begin
+                0x0000000000000578        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000578                app_message_outbox_begin
  .text.app_message_outbox_send
-                0x0000000000000574        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
-                0x0000000000000574                app_message_outbox_send
+                0x0000000000000584        0xc /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+                0x0000000000000584                app_message_outbox_send
  *(.rodata)
- .rodata        0x0000000000000580       0x28 src/tl_live.c.7.o
+ .rodata        0x0000000000000590       0x28 src/tl_live.c.7.o
  *(.rodata*)
  .rodata.str1.1
-                0x00000000000005a8       0x5e src/tl_live.c.7.o
+                0x00000000000005b8       0x5e src/tl_live.c.7.o
 
-.glue_7         0x0000000000000608        0x0
+.glue_7         0x0000000000000618        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000000608        0x0
+.glue_7t        0x0000000000000618        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000000608        0x0
+.vfp11_veneer   0x0000000000000618        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000000608        0x0
+.v4_bx          0x0000000000000618        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000000608        0x0
+.iplt           0x0000000000000618        0x0
  .iplt          0x0000000000000000        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x0000000000000608        0x0
+.rel.dyn        0x0000000000000618        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x0000000000000608        0x4
+.data           0x0000000000000618        0x4
  *(.data)
- .data          0x0000000000000608        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x0000000000000608        0x4 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000000608                __dso_handle
- .data          0x000000000000060c        0x0 src/tl_live.c.7.o
- .data          0x000000000000060c        0x0 appinfo.auto.c.7.o
- .data          0x000000000000060c        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
- .data          0x000000000000060c        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x000000000000060c        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x0000000000000618        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x0000000000000618        0x4 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000000618                __dso_handle
+ .data          0x000000000000061c        0x0 src/tl_live.c.7.o
+ .data          0x000000000000061c        0x0 appinfo.auto.c.7.o
+ .data          0x000000000000061c        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/Pebble/lib/libpebble.a(tmp9Q2g01pebble.o)
+ .data          0x000000000000061c        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x000000000000061c        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
 
-.igot.plt       0x000000000000060c        0x0
+.igot.plt       0x000000000000061c        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.bss            0x000000000000060c       0x78
+.bss            0x000000000000061c       0xb8
  *(.bss)
  *(.bss.*)
  .bss.directiond_layer
-                0x000000000000060c        0x4 src/tl_live.c.7.o
+                0x000000000000061c        0x4 src/tl_live.c.7.o
  .bss.location_layer
-                0x0000000000000610        0x4 src/tl_live.c.7.o
- .bss.sync      0x0000000000000614       0x20 src/tl_live.c.7.o
+                0x0000000000000620        0x4 src/tl_live.c.7.o
+ .bss.sync      0x0000000000000624       0x20 src/tl_live.c.7.o
  .bss.time_layer
-                0x0000000000000634        0x4 src/tl_live.c.7.o
+                0x0000000000000644        0x4 src/tl_live.c.7.o
  .bss.direction_layer
-                0x0000000000000638        0x4 src/tl_live.c.7.o
+                0x0000000000000648        0x4 src/tl_live.c.7.o
  .bss.timet_layer
-                0x000000000000063c        0x4 src/tl_live.c.7.o
+                0x000000000000064c        0x4 src/tl_live.c.7.o
  .bss.sync_buffer
-                0x0000000000000640       0x40 src/tl_live.c.7.o
- .bss.window    0x0000000000000680        0x4 src/tl_live.c.7.o
+                0x0000000000000650       0x80 src/tl_live.c.7.o
+ .bss.window    0x00000000000006d0        0x4 src/tl_live.c.7.o
 
 DISCARD
  libc.a(*)
  libm.a(*)
  libgcc.a(*)
  *(.eh_frame)
-OUTPUT(/Users/Dylan/pebble-dev/tl_live/build/pebble-app.elf elf32-littlearm)
+OUTPUT(/Users/Dylan/pebble-dev/Pebble Gare/build/pebble-app.elf elf32-littlearm)
 
 .ARM.attributes
                 0x0000000000000000       0x27
@@ -784,16 +785,16 @@ OUTPUT(/Users/Dylan/pebble-dev/tl_live/build/pebble-app.elf elf32-littlearm)
  .comment       0x0000000000000000       0x4f appinfo.auto.c.7.o
  .comment       0x0000000000000000       0x4f /Users/Dylan/pebble-dev/PebbleSDK-2.0-BETA4/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000     0x1481
- .debug_info    0x0000000000000000     0x1155 src/tl_live.c.7.o
- .debug_info    0x0000000000001155      0x32c appinfo.auto.c.7.o
+.debug_info     0x0000000000000000     0x146a
+ .debug_info    0x0000000000000000     0x113e src/tl_live.c.7.o
+ .debug_info    0x000000000000113e      0x32c appinfo.auto.c.7.o
 
-.debug_abbrev   0x0000000000000000      0x3a6
- .debug_abbrev  0x0000000000000000      0x2f2 src/tl_live.c.7.o
- .debug_abbrev  0x00000000000002f2       0xb4 appinfo.auto.c.7.o
+.debug_abbrev   0x0000000000000000      0x3be
+ .debug_abbrev  0x0000000000000000      0x30a src/tl_live.c.7.o
+ .debug_abbrev  0x000000000000030a       0xb4 appinfo.auto.c.7.o
 
-.debug_loc      0x0000000000000000      0x2bb
- .debug_loc     0x0000000000000000      0x2bb src/tl_live.c.7.o
+.debug_loc      0x0000000000000000      0x27b
+ .debug_loc     0x0000000000000000      0x27b src/tl_live.c.7.o
 
 .debug_aranges  0x0000000000000000       0x58
  .debug_aranges
@@ -804,15 +805,15 @@ OUTPUT(/Users/Dylan/pebble-dev/tl_live/build/pebble-app.elf elf32-littlearm)
 .debug_ranges   0x0000000000000000       0x90
  .debug_ranges  0x0000000000000000       0x90 src/tl_live.c.7.o
 
-.debug_line     0x0000000000000000      0x33a
- .debug_line    0x0000000000000000      0x216 src/tl_live.c.7.o
- .debug_line    0x0000000000000216      0x124 appinfo.auto.c.7.o
+.debug_line     0x0000000000000000      0x340
+ .debug_line    0x0000000000000000      0x21c src/tl_live.c.7.o
+ .debug_line    0x000000000000021c      0x124 appinfo.auto.c.7.o
 
-.debug_str      0x0000000000000000      0x9f2
- .debug_str     0x0000000000000000      0x873 src/tl_live.c.7.o
-                                        0x927 (size before relaxing)
- .debug_str     0x0000000000000873      0x17f appinfo.auto.c.7.o
-                                        0x280 (size before relaxing)
+.debug_str      0x0000000000000000      0xa09
+ .debug_str     0x0000000000000000      0x88a src/tl_live.c.7.o
+                                        0x93e (size before relaxing)
+ .debug_str     0x000000000000088a      0x17f appinfo.auto.c.7.o
+                                        0x284 (size before relaxing)
 
 .debug_frame    0x0000000000000000       0xa4
  .debug_frame   0x0000000000000000       0xa4 src/tl_live.c.7.o

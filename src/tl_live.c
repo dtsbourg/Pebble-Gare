@@ -10,7 +10,7 @@ static TextLayer *location_layer;
 
 
 static AppSync sync;
-static uint8_t sync_buffer[64];
+static uint8_t sync_buffer[128];
 
 enum TLKey {
   TL_LOCATION_KEY = 0x0,         // TUPLE_CSTRING
