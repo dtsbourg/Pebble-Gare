@@ -822,10 +822,10 @@ OUTPUT(/Users/Dylan/pebble-dev/Pebble Gare/build/pebble-app.elf elf32-littlearm)
  .debug_line    0x0000000000000000      0x254 src/tl_live.c.7.o
  .debug_line    0x0000000000000254      0x124 appinfo.auto.c.7.o
 
-.debug_str      0x0000000000000000      0xb5a
- .debug_str     0x0000000000000000      0x9db src/tl_live.c.7.o
-                                        0xa9f (size before relaxing)
- .debug_str     0x00000000000009db      0x17f appinfo.auto.c.7.o
+.debug_str      0x0000000000000000      0xb5f
+ .debug_str     0x0000000000000000      0x9e0 src/tl_live.c.7.o
+                                        0xaa4 (size before relaxing)
+ .debug_str     0x00000000000009e0      0x17f appinfo.auto.c.7.o
                                         0x284 (size before relaxing)
 
 .debug_frame    0x0000000000000000       0xf8

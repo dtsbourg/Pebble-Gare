@@ -25,8 +25,8 @@ static const uint32_t TLLiveMessageKey  = 0x04;
 
 typedef uint8_t TLLiveMessage;
 
-static const TLLiveMessage Refresh          = 0x01;
-static const TLLiveMessage ReverseDirection = 0x02;
+static const TLLiveMessage RenensDirection          = 0x01;
+static const TLLiveMessage FlonDirection    = 0x02;
 
 
 static void sync_error_callback(DictionaryResult dict_error, AppMessageResult app_message_error, void *context) {
@@ -123,7 +123,7 @@ static void window_load(Window *window) {
   app_sync_init(&sync, sync_buffer, sizeof(sync_buffer), initial_values, ARRAY_LENGTH(initial_values),
       sync_tuple_changed_callback, sync_error_callback, NULL);
 
-  send_cmd(Refresh);
+  send_cmd(RenensDirection);
 }
 
 static void window_unload(Window *window) {
@@ -145,9 +145,9 @@ void single_click_handler(ClickRecognizerRef recognizer, void *context) {
   TLLiveMessage msg = 0;
 
   switch(buttonId) {
-    case BUTTON_ID_UP     : msg = ReverseDirection;
+    case BUTTON_ID_UP     : msg = FlonDirection;
                             break;
-    case BUTTON_ID_SELECT : msg = Refresh;
+    case BUTTON_ID_SELECT : msg = RenensDirection;
                             break;
     case BUTTON_ID_DOWN   : break;
     case NUM_BUTTONS      : break;
