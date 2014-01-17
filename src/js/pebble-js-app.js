@@ -40,7 +40,7 @@ Pebble.addEventListener("appmessage",
                         function(e) {
                           //console.log(e.type);
                           //fetchMetro();
-                          console.log("message : " + e.payload);
+                          console.log("message : " + e.payload.cmd);
                         });
 
 Pebble.addEventListener("webviewclosed",

@@ -12,7 +12,8 @@
     "location": 0,
     "time": 1,
     "direction": 2,
-    "timet": 3
+    "timet": 3,
+    "cmd": 4
   },
   "resources": {
     "media": []

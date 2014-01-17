@@ -21,7 +21,7 @@ enum TLKey {
 };
 
 
-static const uint32_t TLLiveMessageKey  = 0x01;
+static const uint32_t TLLiveMessageKey  = 0x04;
 
 typedef uint8_t TLLiveMessage;
 
